@@ -53,3 +53,11 @@ composer require wildwolf/wp-disable-browse-happy
 **Traditional way**
 
 Upload the plugin to `wp-content/plugins/`, go to the Admin Dashborad => Plugins and activate the plugin.
+
+***Note:*** after you install and activate the plugin, it is possible that you still see the warning in the Dashboard.
+This happens because WP caches the check result for some time. You can either wait until it goes away, or,
+if you have [WP-CLI](http://wp-cli.org/#installing), you can run this from your WP root directory:
+
+```bash
+wp transient delete --all
+```
