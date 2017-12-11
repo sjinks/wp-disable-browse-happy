@@ -1,0 +1,19 @@
+{
+	"name" : "wildwolf/wp-disable-browse-happy",
+	"type" : "wordpress-plugin",
+	"description" : "WordPress plugin to disable calls to the BrwseHappy API",
+	"keywords" : ["wordpress", "plugin", "privacy", "browse-happy", "browsehappy"],
+	"license" : "MIT",
+	"homepage" : "https://github.com/sjinks/disable-browse-happy",
+	"authors" : [
+		{
+			"name" : "Volodymyr Kolesnykov",
+			"email" : "volodymyr@wildwolf.name",
+			"role" : "Developer"
+		}
+	],
+	"require" : {
+		"php" : ">=7.0.0",
+		"composer/installers" : "~1.0"
+	}
+}
