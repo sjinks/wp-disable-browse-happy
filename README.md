@@ -39,3 +39,17 @@ without the explicit consent of the user".
 
 I think that the same should apply to the WP Core itself; since WP "leaks the data" by default,
 and there is no way to opt out of that in the UI, this plugin can be used to turn off that functionality.
+
+## Installation
+
+**Via composer**
+
+Run from WordPress root directory
+
+```
+composer require wildwolf/wp-disable-browse-happy
+```
+
+**Traditional way**
+
+Upload the plugin to `wp-content/plugins/`, go to the Admin Dashborad => Plugins and activate the plugin.
