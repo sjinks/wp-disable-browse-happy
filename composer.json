@@ -1,7 +1,7 @@
 {
 	"name" : "wildwolf/wp-disable-browse-happy",
 	"type" : "wordpress-plugin",
-	"description" : "WordPress plugin to disable calls to the BrwseHappy API",
+	"description" : "WordPress plugin to disable calls to the BrowseHappy API",
 	"keywords" : ["wordpress", "plugin", "privacy", "browse-happy", "browsehappy"],
 	"license" : "MIT",
 	"homepage" : "https://github.com/sjinks/disable-browse-happy",
