@@ -10,8 +10,8 @@ This is probably not a bad thing, but:
 1. It could be annoying for Linux users (they may have a browser with all
 security patches backported yet its version will not be the latest)
 2. `wp_check_browser_version()` function, which implements the check, does that
-with a call to `http://api.wordpress.org/core/browse-happy/1.1/` (or `https://`)
-if the SSL support is enabled:
+with a call to `http://api.wordpress.org/core/browse-happy/1.1/` (or `https://`
+if the SSL support is enabled):
 
 ```php
 // include an unmodified $wp_version
