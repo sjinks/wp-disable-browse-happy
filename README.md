@@ -1,6 +1,6 @@
 # wp-disable-browse-happy
 
-WordPress plugin to disable queries to BrowseHappy API (ie, for privacy reasons)
+WordPress plugin to disable queries to BrowseHappy API (for example, for privacy reasons).
 
 When you go to the Admin Dashboard of your WordPress site, WP checks
 whether your browser is up-to-date, and displays a notice if it is not
@@ -31,14 +31,16 @@ $response = wp_remote_post( $url, $options );
 ```
 
 You can see that this code sends your user agent string, WordPress version, and
-the URL and IP address (implicitly) of the blog.
+the URL and IP address (implicitly) of the blog. Strictly speaking, it is enough
+to send only the user agent to check whether the browser is up-to-date, the rest
+of the information is not necessary.
 
 [WordPess plugin guidelines](https://developer.wordpress.org/plugins/wordpress-org/detailed-plugin-guidelines/) say that
 "In the interest of protecting user privacy, plugins may not contact external servers
 without the explicit consent of the user".
 
 I think that the same should apply to the WP Core itself; since WP "leaks the data" by default,
-and there is no way to opt out of that in the UI, this plugin can be used to turn off that functionality.
+and there is no way to opt out of that in the UI, you can use this plugin to turn off that functionality.
 
 ## Installation
 
@@ -61,4 +63,3 @@ if you have [WP-CLI](http://wp-cli.org/#installing), you can run this from your 
 ```bash
 wp transient delete --all
 ```
-
