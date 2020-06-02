@@ -31,7 +31,7 @@ final class DisableBrowseHappyPlugin
 	 */
 	public function pre_http_request($ret, array $request, string $url)
 	{
-		if (\preg_match('!^https?://api\.wordpress\.org/core/browse-happy/!i', $url)) {
+		if (\preg_match('!^https?://api\.wordpress\.org/core/.*?-happy/!i', $url)) {
 			return new \WP_Error('http_request_failed', \sprintf('Request to %s is not allowed.', $url));
 		}
 
