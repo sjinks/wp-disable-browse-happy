@@ -23,6 +23,12 @@ class PluginTest extends WP_UnitTestCase
 			['http://api.wordpress.org/core/browse-happy/',  'wp_remote_head'],
 			['https://api.wordpress.org/core/browse-happy/', 'wp_remote_post'],
 			['http://api.wordpress.org/core/browse-happy/',  'wp_remote_post'],
+			['https://api.wordpress.org/core/serve-happy/', 'wp_remote_get'],
+			['http://api.wordpress.org/core/serve-happy/',  'wp_remote_get'],
+			['https://api.wordpress.org/core/serve-happy/', 'wp_remote_head'],
+			['http://api.wordpress.org/core/serve-happy/',  'wp_remote_head'],
+			['https://api.wordpress.org/core/serve-happy/', 'wp_remote_post'],
+			['http://api.wordpress.org/core/serve-happy/',  'wp_remote_post'],
 		];
 	}
 }
